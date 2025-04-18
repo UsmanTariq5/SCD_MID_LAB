@@ -3,8 +3,8 @@ WORKDIR D:\downloads\Lab_Sessional-main\Lab_Sessional-main\Cafe_Management_Syste
 COPY ["package.json", "package-lock.json", "./"]
 RUN npm install 
 COPY . .
-EXPOSE 3000
-RUN chown -R node /usr/src/app
+EXPOSE 3004
+RUN chown -R node D:\downloads\Lab_Sessional-main\Lab_Sessional-main\Cafe_Management_System\menu-services
 USER node
 CMD ["npm", "start"]
 
